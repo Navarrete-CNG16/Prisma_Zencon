@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma Catalogo</title>
+    <link rel="icon" href="img/logoPrisma.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body> 
+    <header class="header">
+      <div class="container vh-50 ">
+        <nav class="row text-white justify-content-between  align-items-center text-uppercase pt-4">
+          <a href="#" class="col-auto text-reset">
+          <img src="./img/logoPrismaBlanco.png" alt="Wizard Kicks" class="img-logo">
+          </a>
+          <div class="col-auto">
+            <a href="home.html" class="text-reset pr-3">Home</a>
+            <a href="catalogo.html"class="text-reset pr-3">Store</a>
+            <a href=""class="text-black-50 pr-3">About</a>
+            <a class="text-reset pr-3" onclick="document.getElementById('id02').style.display='block'">Create</a>
+            <a href=""class="text-reset"></a>
+            <button onclick="document.getElementById('id01').style.display='block'">LOGIN</button>
+          </div>
+        </nav>
+        <div class="row  h-100 align-items-center">
+          <div class="col-6 text-black-50">
+            <h1 class="text-capitalize" style="color: white;">
+              <span class="text-white  h5">Know us</span> <br>About</h1>
+            <p class="p-white">There is an amazing history behind</p>
+          </div>
+        </div>
+      </div>
+      <img src="./img/cuts/cut-header.svg">
+    </header>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img src="img/logoPrisma.png" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <label for="uname"><b class="lbM">Login with Metamask</b></label><br>
+        <button type="submit" class="metaBtn"> <img src="img/metamask.png" height ="30" width="150" /> </button>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+      </form>
+    </div>
+    <div id="id02" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <img src="img/logoPrisma.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Name of the NFT</b></label>
+          <input type="text" placeholder="Enter Name" name="uname" required>
+          <label for="psw"><b>Imagen</b></label>
+          <input type="file" class="form-control">
+          <input type="submit" value="Upload">
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+        </form>
+    </div>
+  <div class="container" align="center">
+       <TABLE BORDER=0> <TR><TD>
+       <marquee direction="up"> <h1 align="center">What is Prisma.MIR? </h1> </MARQUEE>
+       </TD></TR>
+       </TABLE>
+       <p align="left"> Prisma... Make is real, is an NFT augmented reality project stored on the Zeniq Network which is a digital payment platform. We create your idea in 3D and personalize it in a way that you can take it not only to Virtual Reality but also to real life through a Hologram. We keep our content updated by making an impact through the various social events that take place each year. For example, our first annual generation would be New Year with 150 completely unique Tokens, developed by our creators and each feature that encompasses this holiday with unique items and utilities to enhance your social event.
+       </p>
+        <img src="./img/hoja.gif" alt="Wizard Kicks" class="img-logo" >
+  </div>
+
+
+<div class="container" align="center">
+     <TABLE BORDER=0> <TR><TD>
+       <marquee direction="up">  <h1>What properties do they have?</h1> </MARQUEE>
+       </TD></TR>
+       </TABLE>
+
+       <p align="rigth"> Each Prisma Token is completely unique, which is why it is already quite special, but our collections have different characteristics depending on the Holiday to be celebrated and the culture in which it is located to make your event stand out and leave a good memory for your guests. .
+        Personalized Tokens have their own specific characteristics for the same user and secret properties are generated which are of their own self-entity, being unique, which gives each of our clients great collectible and emotional value.
+        All our Tokens have associated utilities that could be
+        </p>
+         <img src="./img/gato.gif" alt="Wizard Kicks" class="img-logo">
+        
+  </div>
+
+
+<div class="container" align="center">
+       <TABLE BORDER=0> <TR><TD>
+       <marquee direction="up">  <h1 align="rigth"> What are the utilities of the tokens? </h1> </MARQUEE>
+       </TD></TR>
+       </TABLE>
+        <p align="left"> Being the owner of a Prisma.MIR Token automatically makes you an exclusive member of the community.
+           When ordering a personalized Token, you 
+           have the advantage of not only having it in Virtual, if you do not have the option of obtaining real life through a holographic projector, developed by our own company.
+        </p>
+       <img src="./img/mono.webp" alt="Wizard Kicks" class="img-logo">
+  </div>
+
+<div class="container" align="center">
+  <TABLE BORDER=0> <TR><TD>
+       <marquee direction="up">  <h1> ¿What can I do with my Not Just a JPG Token?</h1> </MARQUEE>
+       </TD></TR>
+       </TABLE>
+        
+        <p align="rigth">  You have the freedom to do whatever you want with your Tokens, our main objective is that you not only have the 3D image but you can't show it to the general public with another perspective. In turn, you can print it and show it off on your wall, on a piece of furniture, in your room, at an event, print it on a shirt, use it as a profile picture, sell it, rent it, auction it. It's yours, forever!
+        </p>
+       <img src="./img/gato2.gif" alt="Wizard Kicks" class="img-logo">
+  </div>
+
+<div class="container" align="center">
+        <TABLE BORDER=0> <TR><TD>
+       <marquee direction="up">  <h1> ¿Is it a good investment to buy a Token?</h1> </MARQUEE>
+       </TD></TR>
+       </TABLE>
+        <p align="left">This is entirely your decision. We believe that Prisma.MIR is a project in constant growth and we will do our best so that each piece is revalued, however the success of this project depends on many factors, one of the most important is the Metaverse, in which we in the future could have the option to play, or view your hologram in the world of Virtual Reality.
+       </p>
+       <img src="./img/mariposa.gif" alt="Wizard Kicks" class="img-logo">
+       
+  </div>
+
+
+       
+        
+       
+
+    <footer class="bg-dark text-white">
+        <div class="container">
+          <nav class="row">
+            <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <img src="./img/logoPrismaBlanco.png" alt="Logo " class="img-logo mr-2">
+            </a>
+            <ul class="col-3 list-unstyled">
+              <l1 class="font-weight-bold text-uppercase">Name</l1>
+              <li><a href="" class="text-reset">Isaac</a></li>
+              <li><a href="" class="text-reset">Dorian</a></li>
+              <li><a href="" class="text-reset">Claudia</a></li>
+              <li><a href="" class="text-reset">José</a></li>
+              <li><a href="" class="text-reset">Marcos</a></li>
+              <li><a href="" class="text-reset">Marco</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+            <l1 class="font-weight-bold text-uppercase">Last Name</l1>
+            <li><a href="" class="text-reset">Ramirez</a></li>
+              <li><a href="" class="text-reset">Mondragón</a></li>
+              <li><a href="" class="text-reset">Navarrete</a></li>
+              <li><a href="" class="text-reset">Flores</a></li>
+              <li><a href="" class="text-reset">Mata</a></li>
+              <li><a href="" class="text-reset">Chavez</a></li>
+           </ul>
+            <ul class="col-3 list-unstyled">
+             <l1 class="font-weight-bold text-uppercase">Social Media</l1>
+             <li class="d-flex justify-content-between">
+               <a href="#" class="text-reset"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" class="text-reset"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#" class="text-reset"><i class="fa-brands fa-youtube-square"></i></a>
+               <a href="#" class="text-reset"><i class="fa-brands fa-instagram-square"></i></a>
+             </li>
+           </ul>
+          </nav>
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

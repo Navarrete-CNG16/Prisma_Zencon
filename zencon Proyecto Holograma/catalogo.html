@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma Catalogo</title>
+    <link rel="icon" href="img/logoPrisma.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body> 
+    <header class="header">
+      <div class="container vh-50 ">
+        <nav class="row text-white justify-content-between  align-items-center text-uppercase pt-4">
+          <a href="#" class="col-auto text-reset">
+          <img src="./img/logoPrismaBlanco.png" alt="Wizard Kicks" class="img-logo">
+          </a>
+          <div class="col-auto">
+            <a href="home.html" class="text-reset pr-3">Home</a>
+            <a href=""class="text-black-50 pr-3">Store</a>
+            <a href="about.html"class="text-reset pr-3">About</a>
+            <a class="text-reset pr-3" onclick="document.getElementById('id02').style.display='block'">Create</a>
+            <a href=""class="text-reset"></a>
+            <button onclick="document.getElementById('id01').style.display='block'">LOGIN</button>
+          </div>
+        </nav>
+        <div class="row  h-100 align-items-center">
+          <div class="col-6 text-black-50">
+            <h1 class="text-capitalize" style="color: white;">
+              <span class="text-white	 h5">Your world in Prisma</span> <br> Store</h1>
+            <p class="p-white">There are no limits for us when it comes to NFTS</p>
+          </div>
+        </div>
+      </div>
+      <img src="./img/cuts/cut-header.svg">
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'"
+	class="close" title="Close Modal">&times;</span>
+		<form class="modal-content animate" action="/action_page.php">
+		<div class="imgcontainer">
+			<img src="img/logoPrisma.png" alt="Avatar" class="avatar">
+		</div>
+		<div class="container">
+			
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+
+       <div class="container">
+      <label for="uname"><b class="lbM">Login with Metamask</b></label><br>
+      <a href="https://metamask.io/">
+      <button type="submit" class="metaBtn" href="https://metamask.io/"> <img src="img/metamask.png" height ="30" width="150" /> </button>
+      </a>
+    </div>
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+		</form>
+	</div>
+    </header>
+    <div id="id02" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <img src="img/logoPrisma.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Name of the NFT</b></label>
+          <input type="text" placeholder="Enter Name" name="uname" required>
+          <label for="psw"><b>Imagen</b></label>
+          <input type="file" class="form-control">
+          <input type="submit" value="Upload">
+        </div>
+
+       <div class="container" style="background-color:#f1f1f1">
+
+
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+        </form>
+    </div>
+    <div class="container vh-100 ">
+      <div class="row mb-5 mt-5">
+        <div class="col-sm-8 text-center">
+          <h3 class="text-uppercase">Selected category</h3>
+        </div>
+        <div class="col-sm-4">
+          <div class="btn-group">
+            <button type="button" class="btn btn-warning">Order by</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between text-warning ">
+              <h5 class="text-center">NFTs</h5>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Art
+              <span class="badge badge-primary badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Collectibles
+              <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Photography
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            </ul>
+            <ul class="list-group mt-5">
+              <li class="list-group-item d-flex justify-content-between text-warning ">
+              <h5 class="text-center">By</h5>  
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Autor
+                <span class="badge badge-primary badge-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Best sellers
+                <span class="badge badge-primary badge-pill">2</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Newest
+                <span class="badge badge-primary badge-pill">1</span>
+              </li>
+              </ul>
+        </div>
+        <div class="col-sm-9 d-flex">
+          <article class="col-4 ">
+            <div class="card">
+              <img src="./img/cara.gif" alt="zapatito" class="card-img ">
+              <div class="card-img- bottom text-white d-flex flex-column justify-content-center text-capitalize">
+                <h7 class="text-warning">New</h7>
+                <h8 class="text-dark">Autor </h8>
+                <h9 class="text-black-50">Name</h9>
+                <h7 class="text-dark">Price</h7>                
+                <button type="button" class="btn btn-warning">Buy now</button>
+              </div>
+            </div>
+          </article>
+          <article class="col-4 ">
+            <div class="card">
+              <img src="./img/Lampara.gif" alt="zapatito" class="card-img ">
+              <div class="card-img- bottom text-white d-flex flex-column justify-content-center text-capitalize">
+                <h7 class="text-warning">New</h7>
+                <h8 class="text-dark">Autor </h8>
+                <h9 class="text-black-50">Name</h9>
+                <h7 class="text-dark">Price</h7>                
+                <button type="button" class="btn btn-warning">Buy now</button>             
+              </div>
+            </div>
+          </article>
+          <article class="col-4 ">
+            <div class="card">
+              <img src="./img/circ.gif" alt="zapatito" class="card-img ">
+              <div class="card-img- bottom text-white d-flex flex-column justify-content-center text-capitalize">
+                <h7 class="text-warning">New</h7>
+                <h8 class="text-dark">Autor </h8>
+                <h9 class="text-black-50">Name</h9>
+                <h7 class="text-dark">Price</h7>                
+                <button type="button" class="btn btn-warning">Buy now</button>           
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <nav class="row">
+          <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+            <img src="./img/logoPrismaBlanco.png" alt="Logo " class="img-logo mr-2">
+          </a>
+          <ul class="col-3 list-unstyled">
+            <l1 class="font-weight-bold text-uppercase">Name</l1>
+            <li><a href="" class="text-reset">Isaac</a></li>
+            <li><a href="" class="text-reset">Dorian</a></li>
+            <li><a href="" class="text-reset">Claudia</a></li>
+            <li><a href="" class="text-reset">José</a></li>
+            <li><a href="" class="text-reset">Marcos</a></li>
+            <li><a href="" class="text-reset">Marco</a></li>
+          </ul>
+          <ul class="col-3 list-unstyled">
+          <l1 class="font-weight-bold text-uppercase">Last Name</l1>
+          <li><a href="" class="text-reset">Ramirez</a></li>
+            <li><a href="" class="text-reset">Mondragón</a></li>
+            <li><a href="" class="text-reset">Navarrete</a></li>
+            <li><a href="" class="text-reset">Flores</a></li>
+            <li><a href="" class="text-reset">Mata</a></li>
+            <li><a href="" class="text-reset">Chavez</a></li>
+         </ul>
+          <ul class="col-3 list-unstyled">
+           <l1 class="font-weight-bold text-uppercase">Social Media</l1>
+           <li class="d-flex justify-content-between">
+             <a href="#" class="text-reset"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#" class="text-reset"><i class="fa-brands fa-twitter"></i></a>
+             <a href="#" class="text-reset"><i class="fa-brands fa-youtube-square"></i></a>
+             <a href="#" class="text-reset"><i class="fa-brands fa-instagram-square"></i></a>
+           </li>
+         </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

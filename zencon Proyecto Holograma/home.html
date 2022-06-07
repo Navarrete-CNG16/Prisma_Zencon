@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma</title>
+	<link rel="icon" href="img/logoPrisma.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+	<header class="header">
+		<div class="container vh-50 ">
+			<nav class="row text-white justify-content-between  align-items-center text-uppercase pt-4">
+				<a href="#" class="col-auto text-reset">
+				<img src="./img/logoPrismaBlanco.png" alt="Wizard Kicks" class="img-logo">
+				</a>
+				<div class="col-auto">
+					<a href=""class="text-black-50 pr-3">Home</a>
+					<a href="catalogo.html"class="text-reset pr-3">Store</a>
+					<a href="about.html"class="text-reset pr-3">About</a>
+					<a class="text-reset pr-3" onclick="document.getElementById('id02').style.display='block'">Create</a>
+					<a href=""class="text-reset"></a>
+					<button onclick="document.getElementById('id01').style.display='block'">LOGIN</button>
+				</div>
+			</nav>
+			<div class="row  h-100 align-items-center">
+				<div class="col-6 text-black-50">
+					<h1 class="text-capitalize" style="color: white;">
+						<span class="text-white	 h5">What are you waiting for?</span> <br> Make It Real!</h1>
+					<p class="p-white">Bring your NFTs everywhere</p>
+					<button onclick="document.getElementById('id02').style.display='block'">I wanna make it real!</button>
+				</div>
+			</div>
+		</div>
+		<img src="./img/cuts/cut-header.svg">
+	</header>
+	<section class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="text-dark text-uppercase h6">The most wanted this month!</h2>
+				<h3 class="text-capitalize">TOP 3 NFT'S</h3>
+				<p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, assumenda deserunt. Minima facilis aut fugiat voluptatum quod. Expedita deleniti quasi mollitia autem id quaerat tempore nostrum quam voluptate minus! Ab!</p>
+			</div>
+			<article class="col-4 card-effect">
+				<div class="card">
+					<img src="./img/gh.gif" alt="Raiting" class="card-img ">
+					<div class="card-img-overlay bottom text-white d-flex flex-column justify-content-center text-center">
+						<h4>Name NFT 1</h4>
+						<p>Creator and price</p>
+						<a href="" class="buyButton">Buy now</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-4 card-effect">
+				<div class="card">
+					<img src="./img/g2.gif" alt="Raiting" class="card-img ">
+					<div class="card-img-overlay bottom text-white d-flex flex-column justify-content-center text-center">
+						<h4>Name NFT 2</h4>
+						<p>Creator and price</p>
+						<a href="" class="buyButton">Buy now</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-4 card-effect">
+				<div class="card">
+					<img src="./img/g3.gif" alt="Raiting" class="card-img">
+					<div class="card-img-overlay bottom text-white d-flex flex-column justify-content-center text-center">
+						<h4>Name NFT 3</h4>
+						<p>Creator and price</p>
+						<a href="" class="buyButton">Buy now</a>
+					</div>
+				</div>
+			</article>
+
+		</div>
+	</section>
+	 <section class="comments mb-5">
+		 <img src="./img/cuts/cut-header.svg" alt="" class="transform-turn">
+		 <div class="container">
+			 <div class="row">
+				 <blockquote class="col-12 text-center">
+					<img src="./img/logoPrismaBlanco.png" alt="sniker" class="comment__img">
+					<blockquote>
+			 </div>
+		 </div>
+	 </section>
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'"
+	class="close" title="Close Modal">&times;</span>
+		<form class="modal-content animate" action="/action_page.php">
+		<div class="imgcontainer">
+			<img src="img/logoPrisma.png" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+			<label for="uname"><b class="lbM">Login with Metamask</b></label><br>
+			<a href="https://metamask.io/">
+			<button type="submit" class="metaBtn"> <img src="img/metamask.png" height ="30" width="150" /> </button>
+		  </a>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		</div>
+		</form>
+	</div>
+
+
+	<div id="id02" class="modal">
+		<span onclick="document.getElementById('id02').style.display='none'"
+		class="close" title="Close Modal">&times;</span>
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<img src="img/logoPrisma.png" alt="Avatar" class="avatar">
+			</div>
+			<div class="container">
+				<label for="uname"><b>Name of the NFT</b></label>
+				<input type="text" placeholder="Enter Name" name="uname" required>
+				<label for="psw"><b>Imagen</b></label>
+				<input type="file" class="form-control">
+				<input type="submit" value="Upload">
+			</div>
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+			</div>
+			</form>
+	</div>
+	 <footer class="bg-dark text-white">
+		 <div class="container">
+			 <nav class="row">
+				 <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+					 <img src="./img/logoPrismaBlanco.png" alt="Logo " class="img-logo mr-2">
+				 </a>
+				 <ul class="col-3 list-unstyled">
+					 <l1 class="font-weight-bold text-uppercase">Name</l1>
+					 <li><a href="" class="text-reset">Isaac</a></li>
+					 <li><a href="" class="text-reset">Dorian</a></li>
+					 <li><a href="" class="text-reset">Claudia</a></li>
+					 <li><a href="" class="text-reset">José</a></li>
+					 <li><a href="" class="text-reset">Marcos</a></li>
+					 <li><a href="" class="text-reset">Marco</a></li>
+				 </ul>
+				 <ul class="col-3 list-unstyled">
+					<l1 class="font-weight-bold text-uppercase">Last Name</l1>
+					<li><a href="" class="text-reset">Ramirez</a></li>
+					 <li><a href="" class="text-reset">Mondragón</a></li>
+					 <li><a href="" class="text-reset">Navarrete</a></li>
+					 <li><a href="" class="text-reset">Flores</a></li>
+					 <li><a href="" class="text-reset">Mata</a></li>
+					 <li><a href="" class="text-reset">Chavez</a></li>
+				</ul>
+				 <ul class="col-3 list-unstyled">
+					<l1 class="font-weight-bold text-uppercase">Social media</l1>
+					<li class="d-flex justify-content-between">
+						<a href="#" class="text-reset"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#" class="text-reset"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#" class="text-reset"><i class="fa-brands fa-youtube-square"></i></a>
+						<a href="#" class="text-reset"><i class="fa-brands fa-instagram-square"></i></a>
+					</li>
+				</ul>
+			 </nav>
+		 </div>
+	 </footer>
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
